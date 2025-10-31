@@ -6,7 +6,7 @@ int main()
 {
 	try {
 		Student obj;
-		obj.SetAge(12);
+		obj.SetAge(18);
 		obj.SetAverage(11);
 		obj.SetYear(3);
 		obj.GetAge();

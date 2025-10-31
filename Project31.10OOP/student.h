@@ -125,11 +125,11 @@ void Student::SetAge(int a)
 
  inline void Student::Input()
  {
-	 cout << "Enter name";
+	 cout << "Enter name:";
 	 cin >> name;
-	 cout << "Enter surname";
+	 cout << "Enter surname:";
 	 cin >> surname;
-	 cout << "Enter age";
+	 cout << "Enter age:";
 	 int a;
 	 cin >> a;
 	 if (a < 17 || a > 65)
@@ -137,8 +137,8 @@ void Student::SetAge(int a)
 		 throw "Age error!!!";
 	 }
 	 age = a;
-	 cin >> age;
-	 cout << "Enter average";
+
+	 cout << "Enter average:";
 	 int Av;
 	 cin >> Av;
 	 if (Av < 0 || Av > 12)
@@ -146,12 +146,11 @@ void Student::SetAge(int a)
 		 throw "Average error!!!";
 	 }
 	 average = Av;
-	 cin >> average;
-	 cout << "Enter year";
-	 cin >> year;
+
+	 cout << "Enter year:";
 	 int y;
 	 cin >> y;
-	 if (y < 17 || y > 65)
+	 if (y < 1 || y > 5)
 	 {
 		 throw "Year error!!!";
 	 }
